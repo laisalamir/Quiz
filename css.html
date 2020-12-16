@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png">
+    <title>QUIZ CSS</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            font-style: italic;
+
+        }
+
+        img {
+            margin: 30px auto auto auto;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: auto auto auto 1100px;
+            max-width: 30%;
+            border: 8px solid transparen;
+        }
+
+        h1 {
+
+            margin: -30px auto auto 500px;
+            font-size: 30pt;
+            text-align: center;
+        }
+
+        #button {
+            font-family: sans-serif;
+            font-size: 20px;
+            background-color: rgb(3, 3, 3);
+            color: white;
+            border: 8px solid transparen;
+            border-radius: 20px;
+            width: 120px;
+            height: 80px;
+            display: block;
+            margin: auto;
+
+        }
+
+        form {
+            background-color: brown;
+            float: left;
+            ;
+            width: 50%;
+            margin-left: 400px;
+            padding: 10px 20px 20px;
+            border-radius: 20px;
+
+        }
+
+        footer {
+            text-align: left;
+            margin-top: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="android-chrome-512x512.png" alt="Preta no Code">
+    <h1>QUIZ CSS</h1>
+    <form id="quiz" name="quiz">
+
+        <p> 1) &rarr;O que significa a sigla CSS:</p>
+        <input type="radio" name=question1 id="op01" value="World Wide Web Consortium">World Wide Web Consortium<br>
+        <input type="radio" name=question1 id="op02" value="Hypertext Markup Language">Hypertext Markup Languageo<br>
+        <input type="radio" name=question1 id="op03" value="Linguagem de Programação em Cascata">Linguagem de Programação em Cascata<br>
+        <input type="radio" name=question1 id="op04" value="Cascading Style Sheets">Cascading Style Sheets<br>
+        <hr>
+
+        <p> 2) &rarr;CSS é usado para estilizar elementos escritos em uma linguagem de marcação como HTML.</br>Qual propriedade devo usar para centralizar um texto.</p>
+        <input type="radio" name=question2 id="op01" value="text-align">text-align <br>
+        <input type="radio" name=question2 id="op02" value="margin-left">margin-left<br>
+        <input type="radio" name=question2 id="op03" value="width">width<br>
+        <input type="radio" name=question2 id="op04" value="display">display<br>
+        <hr>
+
+        <p> 3) &rarr;Qual propriedade devo usar para mudar a cor de fundo de uma página :</p>
+        <input type="radio" name="question3" id="pp01" value="style">style<br>
+        <input type="radio" name="question3" id="pp02" value="color">color<br>
+        <input type="radio" name="question3" id="pp03" value="background-color">background-color<br>
+        <input type="radio" name="question3" id="pp04" value="body">body<br>
+        <hr>
+    
+
+    <input id="button" type="button" value="VERIFICAR" onclick="verificar()">
+
+    <p id="certa"></p>
+    <p id="errado"></p>
+</form>
+
+
+    <script type="text/javascript">
+        function verificar() {
+            let question1 = [...document.getElementsByName('question1')].filter(el => el.checked)[0]
+            let question2 = [...document.getElementsByName('question2')].filter(el => el.checked)[0]
+            let question3 = [...document.getElementsByName('question3')].filter(el => el.checked)[0]
+
+            var certo = 0;
+            var errado = 0;
+
+
+            if (question1?.value === "Cascading Style Sheets") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+            if (question2?.value === "text-align") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+            if (question3?.value === "background-color") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+
+
+            alert(`Resultado:\n${certo} certo. \n ${errado} errado.`);
+
+        }
+    </script>
+    <footer>
+        <p>&copy; Laisa Lamir</p>
+    </footer>
+</body>
+
+</html>

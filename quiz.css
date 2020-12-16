@@ -1,0 +1,57 @@
+body {
+    font-size: 20px;
+    font-weight: Arial, sans-serif;
+    color: black;
+    background-color:rgba(237, 241, 243, 0.418);
+    font-style:italic;
+
+}
+h1 {
+    text-align: center;
+    color: brown; 
+}
+form{
+    background-color:brown;
+    float:left;
+    padding: 10px 20px 10px 20px;
+    width: 800px;
+    max-width: 80%;
+    margin-left: 400px;
+    padding: 10px 20px 20px;
+    border-radius: 20px;
+
+    
+
+}
+h2 {
+    text-align: center;
+    color: brown;
+}
+
+#button {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border: 8px solid transparen;
+    border-radius: 20px;
+    width: 120px;
+    height: 80px;
+    display: block;
+    margin: auto;
+
+}
+
+#result {
+    visibility: hidden;
+    float:left;
+    width: 800px;
+    max-width: 80%;
+    background-color: brown;
+}
+
+footer {
+    text-align: left;
+    color: brown;
+    margin-top: 1100px;
+}

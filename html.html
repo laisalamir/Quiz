@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png">
+    <title>QUIZ HTML</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            font-style: italic;
+
+        }
+
+        img {
+            margin: 30px auto auto auto;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: auto auto auto 1100px;
+            max-width: 30%;
+            border: 8px solid transparen;
+        }
+
+        h1 {
+
+            margin: -30px auto auto 500px;
+            font-size: 30pt;
+            text-align: center;
+        }
+
+        #button {
+            font-family: sans-serif;
+            font-size: 20px;
+            background-color: rgb(3, 3, 3);
+            color: white;
+            border: 8px solid transparen;
+            border-radius: 20px;
+            width: 120px;
+            height: 80px;
+            display: block;
+            margin: auto;
+
+        }
+
+        form {
+            background-color: brown;
+            float: left;
+            ;
+            width: 50%;
+            margin-left: 400px;
+            padding: 10px 20px 20px;
+            border-radius: 20px;
+
+        }
+
+        footer {
+            text-align: left;
+            margin-top: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="android-chrome-512x512.png" alt="Preta no Code">
+    <h1>QUIZ HTML</h1>
+    <form id="quiz" name="quiz">
+
+        <p> 1) &rarr;O que significa a sigla HTML:</p>
+        <input type="radio" name=question1 id="op01" value="Hipopótamo Macaco Leão">Hipopótamo Macaco Leão <br>
+        <input type="radio" name=question1 id="op02" value="HyperText Marketing
+        Language">HyperText Marketing
+        Language<br>
+        <input type="radio" name=question1 id="op03" value="HyperText Markup Language">HyperText Markup Language <br>
+        <input type="radio" name=question1 id="op04" value="HyperText formatação de
+        Textos">HyperText formatação de
+        Textos<br>
+        <hr>
+
+        <p> 2) &rarr;Quem foi o criador da linguagem HTML:</p>
+        <input type="radio" name=question2 id="op01" value="Ada Lovelace">Ada Lovelace <br>
+        <input type="radio" name=question2 id="op02" value="Denzel Washington">Denzel Washington<br>
+        <input type="radio" name=question2 id="op03" value="Katherine Johnson">Katherine Johnson <br>
+        <input type="radio" name=question2 id="op04" value="Tim Barners Lee">Tim Barners Lee <br>
+        <hr>
+
+        <p> 3) &rarr;O que é INPUT</p>
+        <input type="radio" name="question3" id="pp01" value="Saída">Saída<br>
+        <input type="radio" name="question3" id="pp02" value="Entrada">Entrada<br>
+        <input type="radio" name="question3" id="pp03" value="Processamento">Processamento<br>
+        <input type="radio" name="question3" id="pp04" value="Dados">Dados<br>
+        <hr>
+    
+
+    <input id="button" type="button" value="VERIFICAR" onclick="verificar()">
+
+    <p id="certa"></p>
+    <p id="errado"></p>
+</form>
+
+
+    <script type="text/javascript">
+        function verificar() {
+            let question1 = [...document.getElementsByName('question1')].filter(el => el.checked)[0]
+            let question2 = [...document.getElementsByName('question2')].filter(el => el.checked)[0]
+            let question3 = [...document.getElementsByName('question3')].filter(el => el.checked)[0]
+
+            var certo = 0;
+            var errado = 0;
+
+
+            if (question1?.value === "HyperText Markup Language") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+            if (question2?.value === "Tim Barners Lee") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+            if (question3?.value === "Entrada") {
+                certo++;
+            } else {
+                errado++;
+            }
+
+
+
+            alert(`Resultado:\n${certo} certo. \n ${errado} errado.`);
+
+        }
+    </script>
+    <footer>
+        <p>&copy; Laisa Lamir</p>
+    </footer>
+</body>
+
+</html>

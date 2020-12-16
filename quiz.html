@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png">
+    <title>QUIZ</title>
+    <link href="quiz.css" rel="stylesheet">
+    <script src="quiz.js"></script>
+
+</head>
+
+<body>
+    <h1>QUIZ</h1>
+    <h2>**Teste de Lógica**</h2>
+    <p>De acordo com a sequência de informações escolha a melhor opção:</p>
+    <hr>
+
+    <form id="quiz" name="quiz">
+        <p>1) &rarr; 60 + 60 * 0 + 1</p>
+        <input type="radio" name="question1" id="txt11" value="121"> 121 <br>
+        <input type="radio" name="question1" id="txt12" value="01"> 01 <br>
+        <input type="radio" name="question1" id="txt13" value="61"> 61 <br>
+        <input type="radio" name="question1" id="txt14" value="120"> 120 <br>
+        <input type="radio" name="question1" id="txt15" value="60"> 60 <br>
+        <hr>
+        <p>2) &rarr; 2&nbsp; 6 &nbsp;10 &nbsp;14&nbsp; 18</p>
+
+        <input type="radio" name="question2" id="txt22" value="22">22<br>
+        <input type="radio" name="question2" id="txt23" value="23">23<br>
+        <input type="radio" name="question2" id="txt24" value="24">24<br>
+        <input type="radio" name="question2" id="txt25" value="25">25<br>
+        <input type="radio" name="question2" id="txt26" value="26">26<br>
+        <hr>
+        <p>3) &rarr; A&nbsp; F&nbsp; K&nbsp; P </p>
+        <input type="radio" name="question3" id="txt31" value="R">R<br>
+        <input type="radio" name="question3" id="txt32" value="S">S<br>
+        <input type="radio" name="question3" id="txt33" value="T">T<br>
+        <input type="radio" name="question3" id="txt34" value="U">U<br>
+        <input type="radio" name="question3" id="txt35" value="V">V<br>
+        <hr>
+        <p>4) &rarr; A2CD &nbsp;5FGH &nbsp;IJ11L</p>
+        <input type="radio" name="question4" id="txt04" value="MNO16">MNO16<br>
+        <input type="radio" name="question4" id="txt04" value="NOP17">NOP17<br>
+        <input type="radio" name="question4" id="txt04" value="I10KL">I10KL<br>
+        <input type="radio" name="question4" id="txt04" value="KL13N">KL13N<br>
+        <input type="radio" name="question4" id="txt04" value="14OPQ">14OPQ<br>
+        <hr>
+        <p>5)&rarr; 38 &nbsp;36&nbsp; 32 &nbsp;26</p>
+        <input type="radio" name="question5" id="txt05" value="20">20<br>
+        <input type="radio" name="question5" id="txt05" value="18">18<br>
+        <input type="radio" name="question5" id="txt05" value="16">16<br>
+        <input type="radio" name="question5" id="txt05" value="14">14<br>
+        <input type="radio" name="question5" id="txt05" value="14">12<br>
+        <hr>
+        <input id="button" type="button" value="TERMINEI" onclick="terminei()" onmousedown="window.location.href='resultado.html'">
+    </form>
+    
+    <div id="result">
+
+        <p id="msg"></p>
+        <p id="certa"></p>
+        <p id="errada"></p>
+    </div>
+    <footer>
+        <p>&copy; Laisa Lamir</p>
+    </footer>
+</body>
+
+</html>
