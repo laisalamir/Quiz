@@ -49,10 +49,6 @@ function terminei() {
         wrong++;
     }
 
-    if (correct === 0) {
-        alert("Add values before finalizing!")
-    }
-
     let messages = ["Great Job!", "That's Okay!", "Good!", "Not bad", "You really need to do better :("];
 
     let range;
@@ -71,11 +67,11 @@ function terminei() {
     if (correct == 5) {
         range = 0;
     }
-    document.getElementById("result").style.visibility = "visible";
 
-    document.getElementById("msg").innerHTML = messages[range];
+    document.getElementById("result").style.visibility = "visible";
     document.getElementById("certa").innerHTML += `<p>${correct} correct.</p>`;
     document.getElementById("errada").innerHTML += `<p>${wrong} wrong.</p>`;
-
+    document.getElementById("msg").innerHTML = messages[range];
+    
 }
 

@@ -12,17 +12,14 @@ h1 {
 }
 form{
     background-color:brown;
+    margin-left: 20px;
     float:left;
-    padding: 10px 20px 10px 20px;
-    width: 800px;
-    max-width: 80%;
-    margin-left: 400px;
-    padding: 10px 20px 20px;
+    padding: 10px 40px 10px 40px;
+    width: 500px;
     border-radius: 20px;
 
-    
-
 }
+
 h2 {
     text-align: center;
     color: brown;
@@ -39,16 +36,35 @@ h2 {
     height: 80px;
     display: block;
     margin: auto;
+    transition-duration: .5s;
+}
 
+#button:hover {
+    background: white;
+    border:8px solid transparen;
+    color: black;
+    cursor: pointer;
 }
 
 #result {
     visibility: hidden;
-    float:left;
-    width: 800px;
-    max-width: 80%;
-    background-color: brown;
+    width: 500px;
+    background: brown;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 800px;
+    text-align: center;
+    
+    
 }
+#gif {
+    visibility: hidden;
+    width: 375px;
+    height: 245px;
+    border-radius: 20px; 
+}
+
 
 footer {
     text-align: left;

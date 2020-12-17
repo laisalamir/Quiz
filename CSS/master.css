@@ -4,11 +4,16 @@ body {
     color:black;
     background-color: white;
     text-align: center;
+    margin: auto;
 }
-#gif {
-    visibility: hidden;
-   
+
+#logo {
+    width: 200px;
+    height: 200px;
+    border: 8px solid transparen;
+    float: right;
 }
+
 
 #button {
     font-family: sans-serif;
@@ -30,8 +35,8 @@ h2 {
 
 nav#op{
     background-color: brown;
-    width: 50%;
-    margin-left: 300px;
+    width: 500px;
+    margin:auto;
     padding: 10px 20px 20px;
     border-radius: 20px;
     
