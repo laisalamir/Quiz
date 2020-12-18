@@ -1,17 +1,12 @@
 function prox1() {
     document.getElementById("button1").style.display = "none";
     document.getElementById("quiz1").style.visibility = "visible";
-    if (quiz1?.value == "0") {
-        alert("Escolha umas das opções !!")
-    }
+
 }
 
 function prox2() {
     document.getElementById("quiz1").style.display = "none";
     document.getElementById("quiz2").style.visibility = "visible";
-    if (quiz2?.value == "0") {
-        alert("Escolha umas das opções !!")
-    }
 }
 
 function prox3() {
