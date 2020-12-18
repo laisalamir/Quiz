@@ -4,21 +4,42 @@ body {
     color: black;
     background-color:rgba(237, 241, 243, 0.418);
     font-style:italic;
+    vertical-align: baseline;
 
 }
+
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 h1 {
     text-align: center;
     color: brown; 
 }
 form{
     background-color:brown;
-    margin-left: 20px;
+    margin-left: 500px;
+    margin-top: 150px;
     float:left;
     padding: 10px 40px 10px 40px;
     width: 500px;
     border-radius: 20px;
+    text-align:justify;
 
 }
+ #quiz1, #quiz2, #quiz3, #quiz4, #quiz5  {
+    visibility: hidden;
+    
+    
+  }
+
+.quiz-window{
+    color: black;
+    padding: 40px 30px 40px 30px;
+  }
 
 h2 {
     text-align: center;
@@ -46,20 +67,44 @@ h2 {
     cursor: pointer;
 }
 
+#button1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border: 8px solid transparen;
+    border-radius: 20px;
+    width: 120px;
+    height: 80px;
+    display: block;
+    margin-top: 350px;
+    margin-left: 750px;
+    transition-duration: .5s;
+}
+
+#button1:hover {
+    background: white;
+    border:8px solid transparen;
+    color: black;
+    cursor: pointer;
+}
+
+
 #result {
     visibility: hidden;
     width: 500px;
+    height:500px;
     background: brown;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     font-size: 20px;
-    margin-left: 800px;
+    margin: 50px auto auto auto;
     text-align: center;
     
     
 }
 #gif {
-    visibility: hidden;
+    margin: auto;
     width: 375px;
     height: 245px;
     border-radius: 20px; 
