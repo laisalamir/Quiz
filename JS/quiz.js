@@ -79,7 +79,7 @@ function terminei() {
         wrong++;
     }
 
-    let messages = ["Great Job!", "That's Okay!", "Good!", "Not bad", "You really need to do better :("];
+    let messages = ["Bom Trabalho!", "Muito Bem!", "Boa!", "Até que não foi tão ruim!", " Você realmente precisa fazer melhor:("];
 
     let range;
     if (correct == 0 || correct == 1) {
