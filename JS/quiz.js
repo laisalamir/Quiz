@@ -1,7 +1,6 @@
 function prox1() {
     document.getElementById("button1").style.display = "none";
     document.getElementById("quiz1").style.visibility = "visible";
-
 }
 
 function prox2() {
@@ -33,6 +32,7 @@ function terminei() {
 
     let = correct = 0;
     let = wrong = 0;
+
 
     if (question1?.value === "61") {
         console.log('Correct Answer')
@@ -94,8 +94,8 @@ function terminei() {
     }
     document.getElementById("quiz5").style.display = "none";
     document.getElementById("result").style.visibility = "visible";
-    document.getElementById("certa").innerHTML += `<p>${correct} correct.</p>`;
-    document.getElementById("errada").innerHTML += `<p>${wrong} wrong.</p>`;
+    document.getElementById("certa").innerHTML += `<p>${correct} Acertos.</p>`;
+    document.getElementById("errada").innerHTML += `<p>${wrong} Erros.</p>`;
     document.getElementById("msg").innerHTML = messages[range];
     document.getElementById("gif");
 
