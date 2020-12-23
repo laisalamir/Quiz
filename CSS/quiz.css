@@ -6,9 +6,9 @@ body {
     font-style:italic;
     vertical-align: baseline;
 
+
 }
 
-  
   .clearfix:after {
     content: "";
     display: table;
@@ -21,17 +21,16 @@ h1 {
 }
 form{
     background-color:brown;
-    margin-left: 500px;
-    margin-top: 150px;
-    float:left;
     padding: 10px 40px 10px 40px;
     width: 500px;
     border-radius: 20px;
     text-align:justify;
+    display: block;
+    margin: 110px auto auto auto;
 
 }
  #quiz1, #quiz2, #quiz3, #quiz4, #quiz5  {
-    visibility: hidden;
+    visibility: hidden
     
     
   }
@@ -81,8 +80,8 @@ h3 {
     width: 120px;
     height: 80px;
     display: block;
-    margin-top: 350px;
-    margin-left: 750px;
+    margin: 300px auto auto auto;
+    text-align: center;
     transition-duration: .5s;
 }
 
